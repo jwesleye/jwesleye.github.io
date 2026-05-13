@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wes Etheredge</title>
+  <meta name="description" content="Personal homepage of Wes Etheredge.">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      background: #ffffff;
+      color: #1a1a2e;
+    }
+    .container {
+      text-align: center;
+      padding: 2rem 1.5rem 3rem 1.5rem;
+      max-width: 720px;
+      width: 100%;
+    }
+    h1 { font-size: 3rem; margin-bottom: 0.25rem; }
+    h2 {
+      font-size: 1rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #888;
+      margin: 2.5rem 0 1rem 0;
+    }
+    .tagline {
+      font-size: 1.3rem;
+      color: #555;
+      margin: 0.25rem auto 0 auto;
+      max-width: 500px;
+    }
+    p {
+      color: #555;
+      font-size: 1.1rem;
+      max-width: 540px;
+      margin: 0 auto;
+      padding: 0 1rem;
+      word-wrap: break-word;
+      line-height: 1.6;
+    }
+    a { color: #d4880f; text-decoration: none; }
+    .nav-links {
+      display: flex;
+      justify-content: center;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+    }
+    .github-link {
+      display: inline-block;
+      padding: 0.4rem 1.1rem;
+      background: #1a1a2e;
+      color: #fff !important;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      transition: background 0.2s;
+    }
+    .github-link:hover { background: #2d2d4e; }
+    .outline-link {
+      display: inline-block;
+      padding: 0.4rem 1.1rem;
+      border: 1px solid #d1d5db;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      color: #555 !important;
+      transition: border-color 0.2s, color 0.2s;
+    }
+    .outline-link:hover { border-color: #d4880f; color: #d4880f !important; }
+    .features {
+      margin-top: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .feature {
+      flex: 1 1 250px;
+      text-align: left;
+      padding: 0.75rem 1rem;
+      border-left: 3px solid #d4880f;
+    }
+    .feature strong {
+      display: block;
+      font-size: 0.95rem;
+      color: #1a1a2e;
+      margin-bottom: 0.15rem;
+    }
+    .feature span {
+      font-size: 0.85rem;
+      color: #666;
+      line-height: 1.4;
+    }
+    .feature a.learn-more {
+      display: inline-block;
+      margin-top: 0.5rem;
+      font-size: 0.85rem;
+      color: #d4880f;
+    }
+    .feature a.learn-more:hover { text-decoration: underline; }
+    .badges {
+      margin-top: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+    .badge {
+      display: inline-block;
+      background: #f3f4f6;
+      border: 1px solid #d1d5db;
+      border-radius: 6px;
+      padding: 0.3rem 0.7rem;
+      font-size: 0.85rem;
+      color: #555;
+    }
+    .badge a {
+      color: #555;
+    }
+    .badge a:hover { color: #d4880f; }
+    .contact-card {
+      margin-top: 2rem;
+      text-align: left;
+      padding: 1.25rem 1.5rem;
+      border: 1px solid #d1d5db;
+      border-radius: 10px;
+      max-width: 540px;
+      margin-left: auto;
+      margin-right: auto;
+      transition: border-color 0.2s;
+    }
+    .contact-card:hover { border-color: #d4880f; }
+    .contact-card strong {
+      display: block;
+      font-size: 1rem;
+      color: #1a1a2e;
+      margin-bottom: 0.35rem;
+    }
+    .contact-card span {
+      font-size: 0.88rem;
+      color: #666;
+      line-height: 1.5;
+    }
+    .contact-card a.contact-link {
+      display: inline-block;
+      margin-top: 0.75rem;
+      margin-right: 1rem;
+      font-size: 0.85rem;
+      color: #d4880f;
+    }
+    .contact-card a.contact-link:hover { text-decoration: underline; }
+    @media (max-width: 480px) {
+      .container { padding: 1.5rem 1rem 2rem 1rem; }
+      h1 { font-size: 2.2rem; }
+      .tagline { font-size: 1rem; }
+      .feature { flex: 1 1 100%; }
+    }
+    @media (min-width: 481px) and (max-width: 1024px) {
+      .container { padding: 1.5rem 1.5rem 2rem 1.5rem; }
+      h1 { font-size: 2.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="nav-links">
+      <a href="https://github.com/jwesleye" class="github-link">GitHub &rarr;</a>
+      <a href="https://linkedin.com/in/jwesleye" class="outline-link">LinkedIn</a>
+      <a href="/resume" class="outline-link">Resume</a>
+    </div>
+
+    <h1>Wes Etheredge</h1>
+    <p class="tagline"><!-- TODO: add your tagline here --></p>
+
+    <h2>Projects</h2>
+    <div class="features">
+      <div class="feature">
+        <strong>Project One</strong>
+        <span>A short description of what this project does and why it matters.</span>
+        <a href="#" class="learn-more">View project &rarr;</a>
+      </div>
+      <div class="feature">
+        <strong>Project Two</strong>
+        <span>A short description of what this project does and why it matters.</span>
+        <a href="#" class="learn-more">View project &rarr;</a>
+      </div>
+      <div class="feature">
+        <strong>Project Three</strong>
+        <span>A short description of what this project does and why it matters.</span>
+        <a href="#" class="learn-more">View project &rarr;</a>
+      </div>
+      <div class="feature">
+        <strong>Project Four</strong>
+        <span>A short description of what this project does and why it matters.</span>
+        <a href="#" class="learn-more">View project &rarr;</a>
+      </div>
+    </div>
+
+    <h2>Writing</h2>
+    <div class="badges">
+      <span class="badge"><a href="#">Post title one</a></span>
+      <span class="badge"><a href="#">Post title two</a></span>
+      <span class="badge"><a href="#">Post title three</a></span>
+      <span class="badge"><a href="#">Post title four</a></span>
+      <span class="badge"><a href="#">Post title five</a></span>
+    </div>
+
+    <div class="contact-card">
+      <strong>Get in touch</strong>
+      <span>Open to interesting projects and conversations.</span>
+      <a href="mailto:j.wesley.e@gmail.com" class="contact-link">j.wesley.e@gmail.com &rarr;</a>
+      <a href="https://linkedin.com/in/jwesleye" class="contact-link">LinkedIn &rarr;</a>
+    </div>
+
+  </div>
+</body>
+</html>
